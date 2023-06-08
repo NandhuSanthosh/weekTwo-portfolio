@@ -83,8 +83,7 @@
 			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
 			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
 			                    <li class="smooth-menu"><a href="#profiles">profile</a></li>
-			                    <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
+				                    <li class="smooth-menu"><a href="#contact">contact</a></li>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
 			        </div><!--/.container-->
@@ -504,37 +503,45 @@
 						<div class="col-md-offset-1 col-md-5 col-sm-6">
 							<div class="single-contact-box">
 								<div class="contact-form">
-									<form>
+									<form id="contact-form" name="myForm">
 										<div class="row">
 											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+												<div class="form-group  ">
+												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name" >
+												  <span class="error-msg "></i>Err msg</span>
+												  <span class="success-msg 	"></i></span>
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 											<div class="col-sm-6 col-xs-12">
 												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+													<input type="email" class="form-control" id="email" placeholder="Email*" name="email" >
+													<span class="error-msg "><i class="fa-solid fa-circle-exclamation " style="margin-right: 10px"></i>Err msg</span>
+													<span class="success-msg "><i class="fa-solid fa-circle-check " style="color: green"></i></span>
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 										</div><!--/.row-->
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" >
+													<span class="error-msg "><i class="fa-solid fa-circle-exclamation " style="margin-right: 10px"></i>Err msg</span>
+													<span class="success-msg "><i class="fa-solid fa-circle-check " style="color: green"></i></span>
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 										</div><!--/.row-->
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
+													<textarea class="form-control" rows="8" id="comment" placeholder="Message"  ></textarea>
+													<span class="error-msg "><i class="fa-solid fa-circle-exclamation " style="margin-right: 10px"></i>Err msg</span>
+													<span class="success-msg "><i class="fa-solid fa-circle-check " style="color: green"></i></span>
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 										</div><!--/.row-->
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="single-contact-btn">
-													<a class="contact-btn" href="#" role="button">submit</a>
+													<input type="submit" class="contact-btn submit-btn" href="#" role="button" value="submit"/>
 												</div><!--/.single-single-contact-btn-->
 											</div><!--/.col-->
 										</div><!--/.row-->
@@ -572,6 +579,8 @@
 					</div><!--/.row-->
 				</div><!--/.contact-content-->
 			</div><!--/.container-->
+
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 		</section><!--/.contact-->
 		<!--contact end -->
@@ -632,6 +641,8 @@
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
         
+
+		<script src="./assets/js/form-validation.js"></script>
     </body>
 	
 </html>

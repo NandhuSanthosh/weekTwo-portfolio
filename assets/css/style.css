@@ -820,6 +820,32 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     padding: 38px 0;
 }
 .hm-footer-copyright p a {color: #888ea5;}
+
+.form-group .error-msg{
+    margin-left: 20px;
+    content: "*Please enter valid data";
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.form-group .success-msg{
+    margin-left: 20px;
+    content: "*Please enter valid data";
+    color: green;
+    font-size: 12px;
+    display: none;
+}
+
+.form-group .error {
+    display: inline;
+}
+.form-group .success{
+    display: inline;
+}
+
+.submit-btn{
+    background-color: transparent;
+}
 /*===============================
     Scroll Top
 ===============================*/
